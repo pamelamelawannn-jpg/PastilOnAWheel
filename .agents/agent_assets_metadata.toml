@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "NjkbccfIuIe3IZ7Zxw8Yi"
+uri = "file://downloads/pastil-tracker-apps-script.zip"
+type = "unspecified"
+title = "Pastil Tracker Google Apps Script ZIP"
+description = "Contains code.gs and index.html for the Google Sheets-backed Pastil Tracker app."
+logical_id = "fce72359-afe5-4376-b086-57cfae2b0687"
+content_hash = "sha256:95dead49c8818bbd0f237c290458ef9aa6769fb80dd0e5449500a859647730ee"
+size = 12990
+mtime_ms = 1789650046796
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:2b07c72a-0dea-495d-9fae-8d3c259faaf2/fce72359-afe5-4376-b086-57cfae2b0687/a21c99bd-8f86-4c0f-9ff5-15c0081a4fc3"
+storage_version_token = "1789650055685106"
+content_type = "application/octet-stream"
