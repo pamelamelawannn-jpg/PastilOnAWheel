@@ -1,0 +1,19 @@
+kind = "design-system"
+previewPath = "/pastil-design-system/"
+title = "Pastil Tracker Design System"
+description = "The reusable visual language for Pastil on a Wheel: warm food-market colors, confident typography, circular brand marks, thumb-friendly controls, and clear ledger patterns for the sales tracker."
+version = "1.0.0"
+id = "artifacts/pastil-design-system"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/pastil-design-system/" ]
+localPort = 22782
+
+[services.development]
+run = "pnpm --filter @workspace/pastil-design-system run dev"
+
+[services.env]
+PORT = "22782"
+BASE_PATH = "/pastil-design-system/"
