@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Pastil Tracker"
+description = "A mobile-first sales, expense, and profit tracker for Pastil on a Wheel, with a fast product clicker, detailed logs, dashboard insights, and a Google Sheets-ready sync layer."
+version = "1.0.0"
+id = "artifacts/pastil-tracker"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22801
+
+[services.development]
+run = "pnpm --filter @workspace/pastil-tracker run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/pastil-tracker", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/pastil-tracker/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22801"
+BASE_PATH = "/"
