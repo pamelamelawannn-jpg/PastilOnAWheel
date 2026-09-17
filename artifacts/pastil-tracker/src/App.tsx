@@ -18,10 +18,10 @@ import {
   Settings2,
   ShoppingBag,
   Trash2,
-  Utensils,
   X,
 } from 'lucide-react';
 import jarImage from '@assets/JAR_1789649331292.jpg';
+import logoImage from '@assets/pastil_logo_512.png';
 import riceImage from '@assets/RICE_1789649331293.jpg';
 import NotFound from '@/pages/not-found';
 import { ErrorBoundary } from '@/components/error-boundary';
@@ -89,7 +89,7 @@ function AppShell({ children, settings }: { children: ReactNode; settings: AppSe
     <div className="grain min-h-[100dvh] bg-background">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-5 pb-3 pt-6 md:px-8 md:pt-8">
         <Link href="/" data-testid="link-brand" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-[14px] bg-primary text-primary-foreground shadow-[4px_4px_0_hsl(var(--secondary))]"><Utensils size={19} strokeWidth={2.5} /></span>
+          <span className="grid h-10 w-10 place-items-center rounded-full border-2 border-primary bg-card p-0.5 shadow-[4px_4px_0_hsl(var(--secondary))]"><img src={logoImage} alt="Pastil on a Wheel logo" className="h-full w-full rounded-full object-cover" /></span>
           <span><span className="block font-display text-[1.2rem] font-bold leading-none">{settings.businessName}</span><span className="mt-1 block text-[10px] font-bold uppercase tracking-[.18em] text-muted-foreground">Daily counter</span></span>
         </Link>
         <div data-testid="status-local-state" className="flex items-center gap-2 rounded-full border border-border bg-card px-3 py-2 text-[11px] font-bold text-muted-foreground shadow-sm">
